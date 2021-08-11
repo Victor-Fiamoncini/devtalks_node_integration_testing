@@ -1,5 +1,10 @@
 {
+  "name": "devtalks_node_testing",
+  "version": "1.0.0",
+  "private": false,
+  "license": "MIT",
   "scripts": {
+    "dev": "ts-node-dev --respawn --ignore-watch node_modules --no-notify ./src/main.ts",
     "test": "jest"
   },
   "dependencies": {
@@ -15,6 +20,8 @@
     "jest": "^27.0.6",
     "prettier": "^2.3.2",
     "ts-jest": "^27.0.4",
+    "ts-node-dev": "^1.1.8",
+    "tsc": "^2.0.3",
     "typescript": "^4.3.5"
   }
 }
