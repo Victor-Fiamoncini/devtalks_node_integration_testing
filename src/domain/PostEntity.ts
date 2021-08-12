@@ -1,4 +1,4 @@
-export class Post {
+export class PostEntity {
 	constructor(
 		public id: string,
 		public title: string,
