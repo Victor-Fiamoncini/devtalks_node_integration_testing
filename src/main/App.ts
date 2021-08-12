@@ -5,13 +5,13 @@ import { RemoteFetchPosts } from '@app/RemoteFetchPosts';
 
 import { AxiosHttpClient } from '@infra/AxiosHttpClient';
 
-const app = express();
-const SERVER_PORT = 3333;
 const JSON_PLACEHOLDER_URL = 'https://jsonplaceholder.typicode.com';
 
+const app = express();
+app.use(express.json());
 app.use(cors);
 
-app.get('/', async (request, response) => {
+app.get('/posts', async (request, response) => {
 	try {
 		const httpClient = new AxiosHttpClient();
 
@@ -28,6 +28,4 @@ app.get('/', async (request, response) => {
 	}
 });
 
-app.listen(SERVER_PORT, () => {
-	return console.log(`Server listening on: ${SERVER_PORT}`);
-});
+export default app;
