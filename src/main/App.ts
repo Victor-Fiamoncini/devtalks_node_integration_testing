@@ -9,18 +9,16 @@ const JSON_PLACEHOLDER_URL = 'https://jsonplaceholder.typicode.com';
 
 const app = express();
 app.use(express.json());
-app.use(cors);
+app.use(cors());
 
 app.get('/posts', async (request, response) => {
 	try {
 		const httpClient = new AxiosHttpClient();
+		const url = `${JSON_PLACEHOLDER_URL}/posts`;
 
-		const fetchPosts = new RemoteFetchPosts(
-			`${JSON_PLACEHOLDER_URL}/posts`,
-			httpClient
-		);
+		const remoteFetchPosts = new RemoteFetchPosts(url, httpClient);
 
-		const posts = await fetchPosts.fetchPosts();
+		const posts = await remoteFetchPosts.fetchPosts();
 
 		return response.status(200).json(posts);
 	} catch {
