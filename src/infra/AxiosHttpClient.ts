@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-import { HttpClient } from '@app/HttpClient';
+import { HttpClient } from '@app/adapters/HttpClient';
 
 export class AxiosHttpClient implements HttpClient {
 	async get(url: string): Promise<any> {

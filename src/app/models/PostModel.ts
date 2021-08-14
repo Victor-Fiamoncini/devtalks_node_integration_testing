@@ -1,4 +1,4 @@
-import { PostEntity } from '@domain/PostEntity';
+import { PostEntity } from '@domain/entities/PostEntity';
 
 export class PostModel {
 	private static posts: PostModel[] = [];

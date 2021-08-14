@@ -1,7 +1,7 @@
 import cors from 'cors';
 import express from 'express';
 
-import { RemoteFetchPosts } from '@app/RemoteFetchPosts';
+import { RemoteFetchPosts } from '@app/usecases/RemoteFetchPosts';
 
 import { AxiosHttpClient } from '@infra/AxiosHttpClient';
 
