@@ -1,4 +1,4 @@
-import { RemoteFetchPosts } from '../src/app/RemoteFetchPosts';
+import { RemoteFetchPosts } from '../src/app/usecases/RemoteFetchPosts';
 
 test('should done something...', () => {
 	expect(1 + 1).toBe(2);
