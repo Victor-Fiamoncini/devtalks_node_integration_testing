@@ -4,7 +4,7 @@
 
 - Endpoint para listar as postagens vindas da API [JSON Placeholder](https://jsonplaceholder.typicode.com/), expor as postagens em "/posts".
 
-## Maneiras que vamos testar o componente HttpClient
+## Maneiras de testar o componente HttpClient
 
 1ª - Mock (objetos simulados);
 2ª - Injeção de dependência;
