@@ -4,11 +4,11 @@
 
 - Endpoint para listar as postagens vindas da API [JSON Placeholder](https://jsonplaceholder.typicode.com/), expor as postagens em "/posts".
 
-## Maneiras de testar o componente HttpClient
+## Maneiras de testar a feature RemoteFetchPosts
 
-1ª - Mock (objetos simulados);
-2ª - Injeção de dependência;
-3ª - Nock (ou alguma outra biblioteca de terceiros, depende do framework).
+1ª - Mockando o módulo axios;
+2ª - Mockando o componente de HttpClient (Injeção de dependência);
+3ª - Utilizando Nock (ou alguma outra biblioteca de terceiros, depende do framework).
 
 ----------
 By [Victor B. Fiamoncini](https://github.com/Victor-Fiamoncini) ☕️
