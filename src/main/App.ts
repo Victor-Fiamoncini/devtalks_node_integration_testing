@@ -17,8 +17,8 @@ app.get('/posts', async (request, response) => {
 		const fetchedPosts = await remoteFetchPosts.fetchPosts();
 
 		return response.status(200).json(fetchedPosts);
-	} catch {
-		return response.status(500);
+	} catch (err) {
+		return response.status(500).json(err.message);
 	}
 });
 

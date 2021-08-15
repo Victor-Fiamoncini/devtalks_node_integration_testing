@@ -1,14 +1,14 @@
 import { RemoteFetchPosts } from '@app/usecases/RemoteFetchPosts';
 
-import { AxiosHttpClient } from '@infra/AxiosHttpClient';
+import { FetchPostsUseCase } from '@domain/usecases/FetchPostsUseCase';
 
-const JSON_PLACEHOLDER_URL = 'https://jsonplaceholder.typicode.com';
+import { HttpClientFactory } from '@main/factories/HttpClientFactory';
 
 export class FetchPostsUseCaseFactory {
-	static make() {
-		const httpClient = new AxiosHttpClient();
+	static make(): FetchPostsUseCase {
+		const url = 'https://jsonplaceholder.typicode.com/posts';
 
-		const url = `${JSON_PLACEHOLDER_URL}/posts`;
+		const httpClient = HttpClientFactory.make();
 
 		return new RemoteFetchPosts(url, httpClient);
 	}

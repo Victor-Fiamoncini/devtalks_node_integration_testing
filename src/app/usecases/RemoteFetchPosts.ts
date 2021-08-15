@@ -2,6 +2,7 @@ import { HttpClient } from '@app/adapters/HttpClient';
 import { PostModel } from '@app/models/PostModel';
 
 import { PostEntity } from '@domain/entities/PostEntity';
+import { FetchPostsError } from '@domain/errors/FetchPostsError';
 import { FetchPostsUseCase } from '@domain/usecases/FetchPostsUseCase';
 
 export class RemoteFetchPosts implements FetchPostsUseCase {
@@ -11,8 +12,12 @@ export class RemoteFetchPosts implements FetchPostsUseCase {
 	) {}
 
 	async fetchPosts(): Promise<PostEntity[]> {
-		const posts = await this.httpClient.get(this.url);
+		try {
+			const posts = await this.httpClient.get(this.url);
 
-		return PostModel.fromJsonToModels(posts).fromModelsToEntities();
+			return PostModel.fromJsonToModels(posts).fromModelsToEntities();
+		} catch {
+			throw new FetchPostsError();
+		}
 	}
 }
