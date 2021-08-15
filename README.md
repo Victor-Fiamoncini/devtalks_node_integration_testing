@@ -24,8 +24,8 @@ Mesmo em um software bem arquitetado, testando duas unidades que interagem entre
 
 ## Referências
 
-- https://homepages.dcc.ufmg.br/~figueiredo/disciplinas/aulas/testes-de-release_v01.pdf
-- https://teses.usp.br/teses/disponiveis/55/55134/tde-01082017-155344/publico/MariaAdelinaSilvaBrito_revisada.pdf
+- <https://homepages.dcc.ufmg.br/~figueiredo/disciplinas/aulas/testes-de-release_v01.pdf>
+- <https://teses.usp.br/teses/disponiveis/55/55134/tde-01082017-155344/publico/MariaAdelinaSilvaBrito_revisada.pdf>
 
 ![Integration vs Unit Test](./.github/integration_vs_unit_test.gif)
 
