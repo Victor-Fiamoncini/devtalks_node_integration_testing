@@ -18,9 +18,9 @@ Mesmo em um software bem arquitetado, testando duas unidades que interagem entre
 
 ## Maneiras de testar a feature RemoteFetchPosts
 
-1ª - Mockando o módulo axios;
-2ª - Mockando o componente de HttpClient (Injeção de dependência);
-3ª - Interceptando as requisições HTTP (Utilizando Nock).
+- 1ª - Mockando o módulo axios;
+- 2ª - Mockando o componente de HttpClient (Injeção de dependência);
+- 3ª - Interceptando as requisições HTTP (Utilizando Nock).
 
 ## Referências
 
