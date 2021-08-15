@@ -6,7 +6,7 @@ import app from '../../../src/main/App';
 jest.mock('../../../src/infra/AxiosHttpClient');
 
 function mockSuccess() {
-	AxiosHttpClient.prototype.get = jest.fn(async (url: string) => {
+	AxiosHttpClient.prototype.get = jest.fn(async () => {
 		return Promise.resolve([
 			{
 				userId: 1,
@@ -19,7 +19,7 @@ function mockSuccess() {
 }
 
 function mockFailure() {
-	AxiosHttpClient.prototype.get = jest.fn(async (url: string) => {
+	AxiosHttpClient.prototype.get = jest.fn(async () => {
 		return Promise.reject({
 			message: 'Internal server error',
 			status: 500,
