@@ -20,7 +20,7 @@ Mesmo em um software bem arquitetado, testando duas unidades que interagem entre
 
 - 1ª - Mockando o módulo axios;
 - 2ª - Mockando o componente de HttpClient (Injeção de dependência);
-- 3ª - Interceptando as requisições HTTP (Utilizando Nock).
+- 3ª - Interceptando as requisições HTTP (Utilizando Nock);
 
 ## Referências
 
