@@ -2,7 +2,7 @@ import { RemoteFetchPosts } from '@app/usecases/RemoteFetchPosts';
 
 import { FetchPostsUseCase } from '@domain/usecases/FetchPostsUseCase';
 
-import { HttpClientFactory } from '@main/factories/HttpClientFactory';
+import { HttpClientFactory } from '@main/factories/adapters/HttpClientFactory';
 
 export class FetchPostsUseCaseFactory {
 	static make(): FetchPostsUseCase {

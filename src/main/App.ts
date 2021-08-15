@@ -2,7 +2,7 @@ import cors from 'cors';
 import express from 'express';
 import morgan from 'morgan';
 
-import { FetchPostsUseCaseFactory } from '@main/factories/FetchPostsUseCaseFactory';
+import { FetchPostsUseCaseFactory } from '@main/factories/usecases/FetchPostsUseCaseFactory';
 
 const app = express();
 
