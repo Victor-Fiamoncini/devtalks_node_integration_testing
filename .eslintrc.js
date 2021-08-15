@@ -46,8 +46,6 @@ module.exports = {
 					'/^@domain/',
 					'/^@infra/',
 					'/^@main/',
-					'/^@presentation/',
-					'/^@utils/',
 					['parent', 'sibling', 'index'],
 				],
 				alphabetize: { order: 'asc', ignoreCase: true },
