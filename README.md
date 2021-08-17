@@ -14,7 +14,7 @@ Mesmo em um software bem arquitetado, testando duas unidades que interagem entre
 
 - Endpoint para listar as postagens vindas da API [JSON Placeholder](https://jsonplaceholder.typicode.com/), expor as postagens em "/posts".
 
-## Arquitetura do exemplo
+## Arquitetura usada no exemplo
 
 ![Clean Architecture Cone](./.github/clean_architecture_cone.jpg)
 
