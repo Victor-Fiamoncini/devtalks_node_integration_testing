@@ -22,6 +22,10 @@ Mesmo em um software bem arquitetado, testando duas unidades que interagem entre
 
 ## Como o projeto foi desenvolvido
 
+Clean Architecture (Arquitetura Limpa), define que: diferentes partes do sistema devem possuir um baixo grau de dependência, ou seja, fraco acoplamento, resultando em uma fácil manutenibilidade e testabilidade.
+
+Camadas destacadas:
+
 - Entities: responsável por concentrar os principais participantes das regras de negócio;
   - Objetos de negócio;
   - Aplicam regras que geralmente fazem parte apenas da entidade;
@@ -39,6 +43,7 @@ Mesmo em um software bem arquitetado, testando duas unidades que interagem entre
 
 - <https://homepages.dcc.ufmg.br/~figueiredo/disciplinas/aulas/testes-de-release_v01.pdf>
 - <https://teses.usp.br/teses/disponiveis/55/55134/tde-01082017-155344/publico/MariaAdelinaSilvaBrito_revisada.pdf>
+- <https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html>
 - <https://dev.to/joaosczip/clean-architecture-a-little-introduction-4ag6>
 - <https://dev.to/pereiren/clean-architecture-series-part-3-2795>
 
