@@ -10,7 +10,7 @@ Mesmo em um software bem arquitetado, testando duas unidades que interagem entre
 
 ![Integration vs Unit Test](./.github/integration_vs_unit_test.gif)
 
-## Caso de uso (feature)
+## Feature que foi testada
 
 - Endpoint para listar as postagens vindas da API [JSON Placeholder](https://jsonplaceholder.typicode.com/), expor as postagens em "/posts".
 
