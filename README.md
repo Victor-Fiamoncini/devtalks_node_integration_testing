@@ -20,25 +20,6 @@ Mesmo em um software bem arquitetado, testando duas unidades que interagem entre
 - 2ª - Mockando o componente de HttpClient (Injeção de dependência);
 - 3ª - Interceptando as requisições HTTP utilizando Nock;
 
-## Como o projeto foi desenvolvido
-
-Clean Architecture (Arquitetura Limpa), define que: diferentes partes do sistema devem possuir um baixo grau de dependência, ou seja, fraco acoplamento, resultando em uma fácil manutenibilidade e testabilidade.
-
-Camadas destacadas:
-
-- Entities: responsável por concentrar os principais participantes das regras de negócio;
-  - Objetos de negócio;
-  - Aplicam regras que geralmente fazem parte apenas da entidade;
-- Use Cases: realizam a orquestração das Entities na concepção das regras de negócio;
-  - Representa as regras de negócio;
-  - Lançam exceções de negócio;
-- Adapters, Controllers, Presenters, Gateways, etc: fazem a tradução entre o mundo externo e as regras de negócio;
-  - Fazem o intercâmbio de dados entre a base de dados, interface gráfica, aplicativo e/ou outros serviços utilizados pela aplicação;
-- Devices, Web, UI, DB...:
-  - Frameworks ou outras estruturas externas com fazem I/O com a aplicação;
-
-![Clean Architecture Cone](./.github/clean_architecture_cone.jpg)
-
 ## Referências
 
 - <https://homepages.dcc.ufmg.br/~figueiredo/disciplinas/aulas/testes-de-release_v01.pdf>
