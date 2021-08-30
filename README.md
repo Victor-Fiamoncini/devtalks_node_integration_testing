@@ -12,7 +12,8 @@ Mesmo em um software bem arquitetado, testando duas unidades que interagem entre
 
 ## Feature que foi testada
 
-- Endpoint para listar as postagens vindas da API [JSON Placeholder](https://jsonplaceholder.typicode.com/), expor as postagens em "/posts".
+- API REST para listar as postagens vindas de [JSON Placeholder](https://jsonplaceholder.typicode.com/), expor as postagens de forma pública.
+  - GET /posts - application/json
 
 ## Como foi testada a feature/componente RemoteFetchPosts
 
